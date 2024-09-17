@@ -25,6 +25,7 @@ a {
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    border-bottom: 3px solid black;
 }
 
 .nav-image {
@@ -62,5 +63,24 @@ a {
 a:hover {
     color: #7e6457;
     text-decoration: underline;
+}
+
+.site-footer {
+    margin-top: 1000px;
+    height: 120px;
+    background-color: #AAB396;
+    color: #674636;
+    font-weight: bold;
+    border-top: 3px solid black;
+}
+
+.contact-info{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.copy-info {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
