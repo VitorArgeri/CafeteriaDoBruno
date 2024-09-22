@@ -64,3 +64,62 @@ a:hover {
     color: #7e6457;
     text-decoration: underline;
 }
+
+.main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3d281e;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.introduction-text {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7e6457;
+    font-weight: bold;
+}
+
+.site-footer {
+    height: 120px;
+    background-color: #AAB396;
+    font-weight: bold;
+    border-top: 3px solid black;
+}
+
+.author-name{
+    margin-top: -110px;
+    display: flex;
+    color: #674636;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.copy-info {
+    margin-top: 10px;
+    display: flex;
+    color: #674636;
+    font-weight: bold;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+
+.author-email{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #674636;
+}
+
+.name {
+    color: #3d281e;
+}
