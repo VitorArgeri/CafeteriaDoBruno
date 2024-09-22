@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(235, 235, 235);
+    background-color: #ECDFCC;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;                       
     color: black;
@@ -65,8 +65,28 @@ a:hover {
     text-decoration: underline;
 }
 
+
+.main-title {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 75px;
+    font-family:'Times New Roman', Times, serif;
+    color: #3d281e;
+}
+
+.introduction-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .site-footer {
-    margin-top: 1000px;
+    margin-top: 100%;
+    position: sticky;
     height: 120px;
     background-color: #AAB396;
     color: #674636;
