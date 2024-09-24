@@ -104,9 +104,10 @@ a:hover {
 
 .menu-sections img{
     height: 500px;
-    width: 500px;
+    width: 400px;
     border-radius: 3px;
     transition: .7;
+    margin-left: 40px;
 }
 
 .menu-sections img:hover {
@@ -116,7 +117,7 @@ a:hover {
 
 .intro {
     height: 70px;
-    width: 500px;
+    width: 400px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
@@ -126,6 +127,7 @@ a:hover {
     overflow: hidden;
     position: absolute;
     margin-top: -77px;
+    margin-left: 39px;
 }
 
 
@@ -166,7 +168,7 @@ a:hover {
 
 .card:hover .intro {
     height: 230px;
-    bottom: -23px;
+    bottom: -42px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -180,6 +182,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 30px;
 }
 
 .second-card:hover {
@@ -188,7 +191,7 @@ a:hover {
 
 .second-card:hover .intro {
     height: 230px;
-    bottom: -23px;
+    bottom: -42px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -203,7 +206,6 @@ a:hover {
     align-items: center;
     justify-content: center;
     margin-left: 30px;
-    margin-right: 50px;
 }
 
 .third-card:hover {
@@ -212,7 +214,7 @@ a:hover {
 
 .third-card:hover .intro {
     height: 230px;
-    bottom: -23px;
+    bottom: -42px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -235,7 +237,7 @@ a:hover {
 
 .fourth-card:hover .intro {
     height: 230px;
-    bottom: -780px;
+    bottom: -800px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -258,7 +260,7 @@ a:hover {
 
 .fiveth-card:hover .intro {
     height: 230px;
-    bottom: -780px;
+    bottom: -800px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -281,7 +283,7 @@ a:hover {
 
 .sixth-card:hover .intro {
     height: 230px;
-    bottom: -780px;
+    bottom: -800px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -304,7 +306,7 @@ a:hover {
 
 .seventh-card:hover .intro {
     height: 230px;
-    bottom: -1535px;
+    bottom: -1555px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -327,7 +329,7 @@ a:hover {
 
 .eighty-card:hover .intro {
     height: 230px;
-    bottom: -1535px;
+    bottom: -1555px;
     background-color: rgb(#3d281e .5)
 }
 
@@ -335,6 +337,7 @@ a:hover {
     opacity: 1;
     visibility: 1;
 }
+
 
 .ninth-card {
     height: 500px;
@@ -350,7 +353,7 @@ a:hover {
 
 .ninth-card:hover .intro {
     height: 230px;
-    bottom: -1535px;
+    bottom: -1555px;
     background-color: rgb(#3d281e .5)
 }
 
