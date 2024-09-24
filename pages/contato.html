@@ -7,58 +7,91 @@
     <link rel="stylesheet" href="/css/contact.css">
 </head>
 <body>
-
     <header class="site-header">
         <div class="nav-image">
-            <img src="img/Logo_Bruno_s_Coffee-Photoroom-removebg-preview.png" alt="">
+            <img src="/img/Logo_Bruno_s_Coffee-Photoroom-removebg-preview.png" alt="">
             <h1 class="nav-title">Bruno's Coffee</h1>
         </div>
         <nav class="main-nav">
-            <p class="nav-item"><a href="./index.html">Home</a></p>
-            <p class="nav-item"><a href="/pages/cardapio.html">Cardápio</a></p>
+            <p class="nav-item"><a href="/index.html">Home</a></p>
+            <p class="nav-item"><a href="/pages/menu.html">Menu</a></p>
             <p class="nav-item"><a href="/pages/contato.html">Contato</a></p>
         </nav>
     </header>
 
-    <div>
-        <h1>Contato</h1>
-        <h2>Entre em contato conosco!</h2>
-    </div>
-     
-    <div class="pessoas">
-    <div class="logo-img">
-        <img id="logo-img" src="img/IMG_1604.jpeg">
-    </div>
+    <h1>Contato</h1>
+    <h2>Entre em contato conosco</h2>
 
-    <div class="logo">
-        <img id="logo" src="img/IMG_1605.jpg">
-    </div>
-    </div>
-
-    <div class="form-class">
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required maxlength="100">
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required maxlength="100">
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required minlength="50" maxlength="200"></textarea>
-            
-            <button type="submit">Enviar</button>
+    <section class="forms-class">
+        <form class="forms">
+            <div class="nome-class">
+                <label class="nome" for="nome">
+                    Nome:
+                </label>
+                <input class="nome-input" type="text" id="nome" name="nome" required maxlength="100">
+                <br>
+            </div>
+            <div class="e-mail-class">
+                <label class="e-mail" for="e-mail">
+                    E-mail:
+                </label>
+                <input class="email-input" type="email" id="email" name="email" required maxlength="100">
+                <br>
+            </div>
+            <div class="mensagem-div">
+                <label for="mensagem">
+                    <p class="mensagem">Mensagem:</p>
+                </label>
+                <textarea class="mensagem-texarea" id="mensagem" name="mensagem" required minlength="50" maxlength="200"></textarea>    
+            </div>
         </form>
+    </section>
 
-        <div>
-            <h2>Ou se preferir, nos contate pelo contato.</h2>
+    <main class="main-content">
+        <div class="pessoas">
+            <div class="logo-img">
+                <img class="logo-img" src="/img/IMG_1604.jpeg">
+            </div>
+            <div class="logo">
+                <img class="logo" src="/img/IMG_1605.jpg">
+            </div>
         </div>
+        <div class="names">
+            <div class="vitor">
+                <p class="name">Vitor de Almeida Argeri</p>
+                <p class="instagram">Insta: vitor_argeri</p>
+                <p class="telefone">Tel: 19 99552-9735</p>
+                <p class="e-mail">Email: <a href="mailto:vitor.argeri@aluno.senai.br">vitor.argeri@aluno.senai.br</a></p>
+            </div>
+            <div class="bruno">
+                <p class="name">Bruno Quintino</p>
+                <p class="instagram">Insta: brunoquintino._</p>
+                <p class="telefone">Tel: 19 98140-0186</p>
+                <p class="e-mail">Email: <a href="mailto:bruno.quintino@aluno.senai.br">bruno.quintino@aluno.senai.br</a></p>
+            </div>
+        </div>
+    </main>
 
-        <div>
-            <h2>Nosso contato:</h2>
-            <h3>Tel: 19 99552-9735</h3>
-            <h3>Tel: 19 98140-0186</h3>
-            <h3>Insta: brunoquintino._ </h3>
-            <h3>Insta: vitor_argeri</h3>
+    <footer class="site-footer">
+        <div class="authors">
+            <address class="contact-info-vitor">
+                <p class="author-name">
+                    Autor: <span class="name">Vitor Argeri</span>
+                </p>
+                <p class="author-email">
+                    Email: <a href="mailto:vitor.argeri@aluno.senai.br" class="email-link">vitor.argeri@aluno.senai.br</a>
+                </p>
+            </address>
+            <address class="contact-info-bruno">
+                <p class="author-name">
+                    Autor: <span class="name">Bruno Quintino</span>
+                </p>
+                <p class="author-email">
+                    Email: <a href="mailto:vitor.argeri@aluno.senai.br" class="email-link">vitor.argeri@aluno.senai.br</a>
+                </p>
+            </address>
         </div>
+        <p class="copy-info">&copy; 2024 - Todos os direitos reservados</p>
+    </footer>
 </body>
 </html>
