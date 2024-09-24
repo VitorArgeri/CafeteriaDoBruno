@@ -8,8 +8,7 @@ body {
     background-color: #ECDFCC;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;                       
-    color: black;
-}
+    }
 
 a {
     text-decoration: none;
@@ -122,7 +121,7 @@ a:hover {
 }
 
 .about-coffeeshop {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-right: 200px;
     margin-left: 200px;
     background-color:#ECDFCC;
@@ -136,14 +135,27 @@ a:hover {
     font-weight: bold;
     margin-top: 20px;
     padding: 10px;
+    padding-bottom: 30px;
 }
 
 .site-footer {
-    height: 120px;
+    height: 150px;
     background-color: #AAB396;
     color: #674636;
     font-weight: bold;
     border-top: 3px solid black;
+}
+
+.authors {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-vitor {
+    margin-right: 300px;
 }
 
 .author-name{
@@ -154,6 +166,8 @@ a:hover {
 }
 
 .copy-info {
+    color: #3d281e;
+    font-weight: bold;
     margin-top: 10px;
     display: flex;
     align-items: center;

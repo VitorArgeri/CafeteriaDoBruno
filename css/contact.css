@@ -1,45 +1,233 @@
-body {
-    background-color: blanchedalmond;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ECDFCC;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;                       
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.site-header {
+    background-color: #AAB396;
+    color: #3d281e;
+    padding: 10px;
+    height: 150px;
+    width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid black;
+}
+
+.nav-image {
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.nav-image img {
+    height: 300px;
+    width: 300px;
+    margin-top: 70px;
+}
+
+.nav-title {
+    font-size: 25px;
+    margin-left: -60px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.main-nav {
+    margin-left: 32%;
+    align-items: center;
+    display: flex;
+    padding: 15;
+}
+
+.nav-item a {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 100px;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #7e6457;
+    text-decoration: underline;
 }
  
 h1 {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3d281e;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 50px;
 }
 
 h2 {
-    text-align: center;
-}
-
-h3 {
-    text-align: center;
-    color: blueviolet;
-}
-
-.header {
-    width: 100%;
-}
-
-.form-class {
-    text-align: center;
-}
-
-h3:hover {
-    color: rgb(255, 0, 0);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7e6457;
+    font-weight: bold;
+    margin-bottom: 40px;
 }
 
 .pessoas {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .logo-img {
-    text-align: center;
     height: 500px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #3d281e;
+    margin-right: 50px;
 }
 
 .logo {
-    text-align: center;
     height: 500px;
+    width: 500px;
+    border-radius: 3px;
+    border: 1px solid #3d281e;
+}
+
+.names {
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.vitor {
+    margin-right: 750px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.forms-class {
+    margin-top: 50px;
+    font-size: 20px;
+    margin-left: 600px;
+    margin-bottom: 70px;
+}
+
+.nome-class {
+    margin-bottom: 20px;
+    color: #3d281e;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nome-input {
+    margin-left: 90px;
+    height: 40px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.e-mail-class {
+    margin-bottom: 20px;
+    color: #3d281e;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.email-input {
+    margin-left: 86px;
+    height: 40px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.mensagem-div{
+    display: flex;
+    margin-top: 20px;
+}
+
+.mensagem {
+    margin-bottom: 20px;
+    color: #3d281e;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.mensagem-texarea{
+    margin-top: 7px;
+    margin-left: 30px;
+    height: 80px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.bruno {
+    margin-top: 20px;
+    margin-left: 270px;
+}
+
+.site-footer {
+    height: 150px;
+    background-color: #AAB396;
+    color: #674636;
+    font-weight: bold;
+    border-top: 3px solid black;
+}
+
+.authors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-vitor {
+    margin-right: 300px;
+}
+
+.author-name{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #674636;
+    font-weight: bold;
+}
+
+.copy-info {
+    color: #3d281e;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author-email{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #674636;
+    font-weight: bold;
+}
+
+.name {
+    color: #3d281e;
 }

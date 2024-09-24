@@ -84,40 +84,326 @@ a:hover {
     font-weight: bold;
 }
 
+.section-title {
+    margin-left: 180px;
+    margin-top: 70px;
+    font-size: 35px;
+    color: #3d281e;
+    font-weight: bold;
+}
+
+.menu-sections {
+    display: flex;
+    margin-left: 180px;
+    margin-right: 180px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.menu-sections img{
+    height: 500px;
+    width: 500px;
+    border-radius: 3px;
+    transition: .7;
+}
+
+.menu-sections img:hover {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
+.intro {
+    height: 70px;
+    width: 500px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    background-color: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .3s;
+    overflow: hidden;
+    position: absolute;
+    margin-top: -77px;
+}
+
+
+.intro h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.descricao {
+    font-size: 20px;
+    opacity: 0;
+}
+
+.price {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.nome {
+    font-weight: bold;
+}
+
+.card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .intro {
+    height: 230px;
+    bottom: -23px;
+    background-color: rgb(#3d281e .5)
+}
+
+.card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.second-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-card:hover {
+    cursor: pointer;
+}
+
+.second-card:hover .intro {
+    height: 230px;
+    bottom: -23px;
+    background-color: rgb(#3d281e .5)
+}
+
+.second-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.third-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+.third-card:hover {
+    cursor: pointer;
+}
+
+.third-card:hover .intro {
+    height: 230px;
+    bottom: -23px;
+    background-color: rgb(#3d281e .5)
+}
+
+.third-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.fourth-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.fourth-card:hover {
+    cursor: pointer;
+}
+
+.fourth-card:hover .intro {
+    height: 230px;
+    bottom: -780px;
+    background-color: rgb(#3d281e .5)
+}
+
+.fourth-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.fiveth-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.fiveth-card:hover {
+    cursor: pointer;
+}
+
+.fiveth-card:hover .intro {
+    height: 230px;
+    bottom: -780px;
+    background-color: rgb(#3d281e .5)
+}
+
+.fiveth-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.sixth-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.sixth-card:hover {
+    cursor: pointer;
+}
+
+.sixth-card:hover .intro {
+    height: 230px;
+    bottom: -780px;
+    background-color: rgb(#3d281e .5)
+}
+
+.sixth-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.seventh-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.seventh-card:hover {
+    cursor: pointer;
+}
+
+.seventh-card:hover .intro {
+    height: 230px;
+    bottom: -1535px;
+    background-color: rgb(#3d281e .5)
+}
+
+.seventh-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.eighty-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.eighty-card:hover {
+    cursor: pointer;
+}
+
+.eighty-card:hover .intro {
+    height: 230px;
+    bottom: -1535px;
+    background-color: rgb(#3d281e .5)
+}
+
+.eighty-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
+.ninth-card {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+}
+
+.ninth-card:hover {
+    cursor: pointer;
+}
+
+.ninth-card:hover .intro {
+    height: 230px;
+    bottom: -1535px;
+    background-color: rgb(#3d281e .5)
+}
+
+.ninth-card:hover .descricao {
+    opacity: 1;
+    visibility: 1;
+}
+
 .site-footer {
-    height: 120px;
+    margin-top: 50px;
+    height: 150px;
     background-color: #AAB396;
+    color: #674636;
     font-weight: bold;
     border-top: 3px solid black;
 }
 
-.author-name{
-    margin-top: -110px;
+.authors {
     display: flex;
-    color: #674636;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-vitor {
+    margin-right: 300px;
+}
+
+.author-name{
+    margin-top: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    color: #674636;
     font-weight: bold;
 }
 
 .copy-info {
+    color: #3d281e;
+    font-weight: bold;
     margin-top: 10px;
     display: flex;
-    color: #674636;
-    font-weight: bold;
     align-items: center;
-    font-weight: bold;
     justify-content: center;
 }
-
 
 .author-email{
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
     color: #674636;
+    font-weight: bold;
 }
 
 .name {
