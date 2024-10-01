@@ -112,6 +112,27 @@ h2 {
     cursor: pointer;
 }
 
+.Saudacoes {
+    font-size: 4vh;
+    font-weight: bold;
+    color: #674636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.Endereço {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.address-img {
+    border: 3px solid #3d281e;
+    border-radius: 2%;
+}
+
 .logo-img {
     height: 500px;
     width: 500px;
@@ -125,6 +146,14 @@ h2 {
     width: 500px;
     border-radius: 3px;
     border: 1px solid #3d281e;
+}
+
+.integrantes {
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4vh;
 }
 
 .names {
@@ -198,7 +227,7 @@ h2 {
 
 .bruno {
     margin-top: 20px;
-    margin-left: 270px;
+    margin-left: 40vh;
 }
 
 .site-footer {
@@ -249,4 +278,5 @@ h2 {
 
 .name {
     color: #3d281e;
+    font-weight: bold;
 }
