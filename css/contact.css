@@ -93,6 +93,25 @@ h2 {
     margin-top: 30px;
 }
 
+.submit {
+    position: absolute;
+    left: 130vh;
+    background-color: #AAB396;
+    color: white;
+    font-weight: bold;
+    border-radius: 5%;
+    height: 5vh;
+    width: 10vh;
+    bottom: 41vh;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #75805f;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .logo-img {
     height: 500px;
     width: 500px;
@@ -177,28 +196,9 @@ h2 {
     font-size: 25px;
 }
 
-.submit {
-    position: absolute;
-    left: 130vh;
-    background-color: #AAB396;
-    color: white;
-    font-weight: bold;
-    border-radius: 5%;
-    height: 5vh;
-    width: 10vh;
-    bottom: 41vh;
-    transition: 0.3s;
-}
-
-.submit:hover {
-    background-color: #75805f;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 .bruno {
     margin-top: 20px;
-    margin-left: 40vh;
+    margin-left: 270px;
 }
 
 .site-footer {
@@ -249,5 +249,4 @@ h2 {
 
 .name {
     color: #3d281e;
-    font-weight: bold;
 }

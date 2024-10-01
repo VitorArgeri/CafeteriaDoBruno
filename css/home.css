@@ -101,6 +101,11 @@ a:hover {
     color: white;
 }
 
+.home-img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 
 .meet-tag {
     color: white;
@@ -113,7 +118,6 @@ a:hover {
 
 .coffeeshop-image {
     margin-top: 20px;
-    margin-left: 23%;
     border-radius: 2%;
     height: 700px;
     width: auto;
