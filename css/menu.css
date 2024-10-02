@@ -19,8 +19,8 @@ a {
 .site-header {
     background-color: #AAB396;
     color: #3d281e;
-    padding: 10px;
-    height: 150px;
+    padding: 1.25vh;
+    height: 18.75vh;
     width: 100%;
     flex-shrink: 0;
     display: flex;
@@ -31,32 +31,31 @@ a {
 .nav-image {
     align-items: center;
     display: flex;
-    align-items: center;
 }
 
 .nav-image img {
-    height: 300px;
-    width: 300px;
-    margin-top: 70px;
+    height: 37.5vh;
+    width: 37.5vh;
+    margin-top: 8.75vh;
 }
 
 .nav-title {
-    font-size: 25px;
-    margin-left: -60px;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 3.125vh;
+    margin-left: -7.5vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .main-nav {
-    margin-left: 32%;
+    margin-left: 40vh;
     align-items: center;
     display: flex;
-    padding: 15;
+    padding: 1.875vh;
 }
 
 .nav-item a {
-    font-size: 25px;
+    font-size: 3.125vh;
     font-weight: bold;
-    margin: 100px;
+    margin: 12.5vh;
     transition: 0.2s;
 }
 
@@ -65,18 +64,22 @@ a:hover {
     text-decoration: underline;
 }
 
+ol {
+    display: flex;
+}
+
 .main-title {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #3d281e;
     font-weight: bold;
-    margin-top: 20px;
-    font-size: 50px;
+    margin-top: 2.5vh;
+    font-size: 6.25vh;
 }
 
 .introduction-text {
-    font-size: 25px;
+    font-size: 3.125vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,29 +88,40 @@ a:hover {
 }
 
 .section-title {
-    margin-left: 180px;
-    margin-top: 70px;
-    font-size: 35px;
+    margin-left: 22.5vh;
+    margin-top: 8.75vh;
+    font-size: 4.375vh;
+    color: #3d281e;
+    font-weight: bold;
+}
+
+.section-title-brownie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8.75vh;
+    font-size: 4.375vh;
     color: #3d281e;
     font-weight: bold;
 }
 
 .menu-sections {
+    justify-content: center;
     display: flex;
-    margin-left: 180px;
-    margin-right: 180px;
     box-shadow: 5px 5px 20px black;
     overflow: hidden;
-    margin-top: 30px;
-    padding: 50px;
+    margin-top: 3.75vh;
+    padding: 6.25vh;
+    margin-left: 12vh;
+    margin-right: 12vh;
 }
 
-.menu-sections img{
-    height: 500px;
-    width: 400px;
+.menu-sections img {
+    height: 62.5vh;
+    width: 50vh;
     border-radius: 3px;
-    transition: .7;
-    margin-left: 40px;
+    transition: .7s;
+    margin-left: 5vh;
 }
 
 .menu-sections img:hover {
@@ -115,29 +129,51 @@ a:hover {
     transition: 0.3s;
 }
 
+.menu-sections-brownie {
+    justify-content: center;
+    display: flex;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    margin-top: 3.75vh;
+    padding: 6.25vh;
+    margin-left: 60vh;
+    margin-right: 60vh;
+}
+
+.menu-sections-brownie img {
+    height: 62.5vh;
+    width: 50vh;
+    border-radius: 3px;
+    transition: .7s;
+    margin-left: 5vh;
+}
+
+.menu-sections-brownie img:hover {
+    filter: brightness(70%);
+    transition: 0.3s;
+}
+
 .intro {
-    height: 70px;
-    width: 400px;
-    padding: 6px;
+    height: 8.75vh;
+    width: 50vh;
+    padding: 0.75vh;
     box-sizing: border-box;
     position: absolute;
-    background-color: rgb(27, 27, 27, .5);
+    background-color: rgba(27, 27, 27, 0.5);
     color: white;
     transition: .3s;
     overflow: hidden;
-    position: absolute;
-    margin-top: -77px;
-    margin-left: 39px;
+    margin-top: -9.625vh;
+    margin-left: 4.875vh;
 }
-
 
 .intro h1 {
     text-align: center;
-    font-size: 40px;
+    font-size: 5vh;
 }
 
 .descricao {
-    font-size: 20px;
+    font-size: 2.5vh;
     opacity: 0;
 }
 
@@ -145,7 +181,7 @@ a:hover {
     justify-content: center;
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 3.75vh;
     font-weight: bold;
     color: white;
 }
@@ -155,11 +191,11 @@ a:hover {
 }
 
 .card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .card:hover {
@@ -167,22 +203,22 @@ a:hover {
 }
 
 .card:hover .intro {
-    height: 230px;
-    bottom: -42px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -24.3vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .second-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .second-card:hover {
@@ -190,22 +226,22 @@ a:hover {
 }
 
 .second-card:hover .intro {
-    height: 230px;
-    bottom: -42px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -24.3vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .second-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .third-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
+    margin-right: 3.75vh;
 }
 
 .third-card:hover {
@@ -213,22 +249,22 @@ a:hover {
 }
 
 .third-card:hover .intro {
-    height: 230px;
-    bottom: -42px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    background-color: rgba(61, 40, 30, 0.5);
+    bottom: -24.3vh;
 }
 
 .third-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .fourth-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .fourth-card:hover {
@@ -236,22 +272,22 @@ a:hover {
 }
 
 .fourth-card:hover .intro {
-    height: 230px;
-    bottom: -800px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -119vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .fourth-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .fiveth-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .fiveth-card:hover {
@@ -259,22 +295,22 @@ a:hover {
 }
 
 .fiveth-card:hover .intro {
-    height: 230px;
-    bottom: -800px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -119vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .fiveth-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .sixth-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .sixth-card:hover {
@@ -282,22 +318,22 @@ a:hover {
 }
 
 .sixth-card:hover .intro {
-    height: 230px;
-    bottom: -800px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -119vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .sixth-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .seventh-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .seventh-card:hover {
@@ -305,22 +341,22 @@ a:hover {
 }
 
 .seventh-card:hover .intro {
-    height: 230px;
-    bottom: -1555px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -213.5vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .seventh-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
 .eighty-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .eighty-card:hover {
@@ -328,23 +364,22 @@ a:hover {
 }
 
 .eighty-card:hover .intro {
-    height: 230px;
-    bottom: -1555px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -213.5vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .eighty-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
 }
 
-
 .ninth-card {
-    height: 500px;
+    height: 62.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30px;
+    margin-right: 3.75vh;
 }
 
 .ninth-card:hover {
@@ -352,19 +387,42 @@ a:hover {
 }
 
 .ninth-card:hover .intro {
-    height: 230px;
-    bottom: -1555px;
-    background-color: rgb(#3d281e .5)
+    height: 28.75vh;
+    bottom: -213.5vh;
+    background-color: rgba(61, 40, 30, 0.5);
 }
 
 .ninth-card:hover .descricao {
     opacity: 1;
-    visibility: 1;
+    visibility: visible;
+}
+
+.tenth-card {
+    height: 62.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3.75vh;
+}
+
+.tenth-card:hover {
+    cursor: pointer;
+}
+
+.tenth-card:hover .intro {
+    height: 28.75vh;
+    bottom: -307.5vh;
+    background-color: rgba(61, 40, 30, 0.5);
+}
+
+.tenth-card:hover .descricao {
+    opacity: 1;
+    visibility: visible;
 }
 
 .site-footer {
-    margin-top: 50px;
-    height: 150px;
+    margin-top: 6.25vh;
+    height: 18.75vh;
     background-color: #AAB396;
     color: #674636;
     font-weight: bold;
@@ -375,15 +433,15 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 2.5vh;
 }
 
 .contact-info-vitor {
-    margin-right: 300px;
+    margin-right: 37.5vh;
 }
 
-.author-name{
-    margin-top: 10px;
+.author-name {
+    margin-top: 1.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,14 +452,14 @@ a:hover {
 .copy-info {
     color: #3d281e;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.author-email{
-    margin-top: 10px;
+.author-email {
+    margin-top: 1.25vh;
     display: flex;
     align-items: center;
     justify-content: center;

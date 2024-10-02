@@ -1,3 +1,18 @@
+:root {
+    --background-body: #ECDFCC;
+    --color-black: black;
+    --color-white: white;
+    --color-header-bg: #AAB396;
+    --color-header-text: #3d281e;
+    --color-hover: #7e6457;
+    --color-main-title: #3d281e;
+    --color-subtitle: #7e6457;
+    --color-footer-bg: #AAB396;
+    --color-footer-text: #674636;
+    --color-form-text: #3d281e;
+    --color-button: #75805f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,109 +20,110 @@
 }
 
 body {
-    background-color: #ECDFCC;
+    background-color: var(--background-body);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;                       
-    color: black;
+    color: var(--color-black);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
 }
 
 .site-header {
-    background-color: #AAB396;
-    color: #3d281e;
-    padding: 10px;
-    height: 150px;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: 1.25vh;
+    height: 18.75vh;
     width: 100%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 0.375vh solid var(--color-black);
 }
 
 .nav-image {
     align-items: center;
     display: flex;
-    align-items: center;
 }
 
 .nav-image img {
-    height: 300px;
-    width: 300px;
-    margin-top: 70px;
+    height: 37.5vh;
+    width: 37.5vh;
+    margin-top: 8.75vh;
 }
 
 .nav-title {
-    font-size: 25px;
-    margin-left: -60px;
-    margin-bottom: 20px;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 3.125vh;
+    margin-left: -7.5vh;
+    margin-bottom: 2.5vh;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .main-nav {
-    margin-left: 32%;
+    margin-left: 32vh;
     align-items: center;
     display: flex;
-    padding: 15;
+    padding: 1.875vh;
 }
 
 .nav-item a {
-    font-size: 25px;
+    font-size: 3.125vh;
     font-weight: bold;
-    margin: 100px;
+    margin: 12.5vh;
     transition: 0.2s;
 }
 
 a:hover {
-    color: #7e6457;
+    color: var(--color-hover);
     text-decoration: underline;
 }
- 
+
 h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #3d281e;
+    color: var(--color-main-title);
     font-weight: bold;
-    margin-top: 20px;
-    font-size: 50px;
+    margin-top: 2.5vh;
+    font-size: 6.25vh;
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 3.125vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7e6457;
+    color: var(--color-subtitle);
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 5vh;
 }
 
 .pessoas {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 3.75vh;
 }
 
 .submit {
-    position: absolute;
-    left: 130vh;
-    background-color: #AAB396;
-    color: white;
+    position: relative;
+    left: 54.5vh;
+    transform: translateX(-50%);
+    background-color: var(--color-header-bg);
+    color: var(--color-white);
     font-weight: bold;
     border-radius: 5%;
     height: 5vh;
     width: 10vh;
-    bottom: 41vh;
+    margin-top: 5vh;
     transition: 0.3s;
+    font-size: 2.3vh;
 }
 
 .submit:hover {
-    background-color: #75805f;
+    background-color: var(--color-button); 
     transition: 0.3s;
     cursor: pointer;
 }
@@ -115,7 +131,7 @@ h2 {
 .Saudacoes {
     font-size: 4vh;
     font-weight: bold;
-    color: #674636;
+    color: var(--color-footer-text);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,23 +145,32 @@ h2 {
 }
 
 .address-img {
-    border: 3px solid #3d281e;
+    border: 0.375vh solid var(--color-header-text);
     border-radius: 2%;
+    height: 50vh;
+    width: auto;
 }
 
 .logo-img {
-    height: 500px;
-    width: 500px;
+    height: 62.5vh;
+    width: 62.5vh;
     border-radius: 3px;
-    border: 1px solid #3d281e;
-    margin-right: 50px;
+    border: 0.125vh solid var(--color-header-text);
+    margin-right: 6.25vh;
+}
+
+.endereço-text {
+    margin-left: 70vh;
+    font-size: 3vh;
+    font-weight: bold;
+    color: var(--color-coffee-border);
 }
 
 .logo {
-    height: 500px;
-    width: 500px;
+    height: 62.5vh;
+    width: 62.5vh;
     border-radius: 3px;
-    border: 1px solid #3d281e;
+    border: 0.125vh solid var(--color-header-text);
 }
 
 .integrantes {
@@ -157,126 +182,391 @@ h2 {
 }
 
 .names {
-    font-size: 20px;
+    font-size: 2.5vh;
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 8.75vh;
 }
 
 .vitor {
-    margin-right: 750px;
-    margin-top: 20px;
+    margin-right: 93.75vh;
+    margin-top: 2.5vh;
     position: absolute;
 }
 
 .forms-class {
-    margin-top: 50px;
-    font-size: 20px;
-    margin-left: 600px;
-    margin-bottom: 70px;
+    margin-top: 5vh;
+    font-size: 2vh;
+    margin-left: 71vh;
+    margin-bottom: 7vh;
 }
 
 .nome-class {
-    margin-bottom: 20px;
-    color: #3d281e;
+    margin-bottom: 2vh;
+    color: var(--color-form-text);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 .nome-input {
-    margin-left: 90px;
-    height: 40px;
-    width: 400px;
-    font-size: 25px;
+    margin-left: 9vh;
+    height: 4vh;
+    width: 40vh;
+    font-size: 2.5vh;
 }
 
 .e-mail-class {
-    margin-bottom: 20px;
-    color: #3d281e;
+    margin-bottom: 2vh;
+    color: var(--color-form-text);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vh;
 }
 
 .email-input {
-    margin-left: 86px;
-    height: 40px;
-    width: 400px;
-    font-size: 25px;
+    margin-left: 8.6vh;
+    height: 4vh;
+    width: 40vh;
+    font-size: 2.5vh;
 }
 
-.mensagem-div{
+.mensagem-div {
     display: flex;
-    margin-top: 20px;
+    margin-top: 2vh;
 }
 
 .mensagem {
-    margin-bottom: 20px;
-    color: #3d281e;
+    margin-bottom: 2vh;
+    color: var(--color-form-text);
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vh;
 }
 
-.mensagem-texarea{
-    margin-top: 7px;
-    margin-left: 30px;
-    height: 80px;
-    width: 400px;
-    font-size: 25px;
+.mensagem-texarea {
+    margin-top: 0.7vh;
+    margin-left: 3vh;
+    height: 8vh;
+    width: 40vh;
+    font-size: 2.5vh;
 }
 
 .bruno {
-    margin-top: 20px;
+    margin-top: 2.5vh;
     margin-left: 40vh;
 }
 
 .site-footer {
-    height: 150px;
-    background-color: #AAB396;
-    color: #674636;
+    height: 18.75vh;
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
     font-weight: bold;
-    border-top: 3px solid black;
+    border-top: 0.375vh solid var(--color-black);
 }
 
 .authors {
+    margin: 1.25vh 0 2.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 .contact-info-vitor {
-    margin-right: 300px;
+    margin-right: 37.5vh;
 }
 
-.author-name{
-    margin-top: 10px;
+.author-name, 
+.copy-info, 
+.author-email {
+    margin-top: 1.25vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #674636;
-    font-weight: bold;
-}
-
-.copy-info {
-    color: #3d281e;
-    font-weight: bold;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.author-email{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #674636;
-    font-weight: bold;
 }
 
 .name {
-    color: #3d281e;
-    font-weight: bold;
+    color: var(--color-black);
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    :root {
+        --background-body: #ECDFCC;
+        --color-black: black;
+        --color-white: white;
+        --color-header-bg: #AAB396;
+        --color-header-text: #3d281e;
+        --color-hover: #7e6457;
+        --color-main-title: #ffffff;
+        --color-coffee-border: #3d281e;
+        --color-footer-bg: #AAB396;
+        --color-footer-text: #674636;
+        --color-name: #3d281e;
+        --color-white-bg: #ECDFCC;
+    }
+
+    .nav-title {
+        font-size: 2.5vh;
+        margin-left: -8vh;
+        margin-top: 2vh;
+    }
+
+    .nav-image {
+        margin-left: -10vh;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 55vh;
+        background-color: #AAB396;
+    }
+
+    .nav-item a {
+        font-size: 2.5vh;
+        margin: 2vh 0;
+    }
+
+    h1 {
+        color: var(--color-coffee-border);
+        font-size: 5vh;
+    }
+
+    h2 {
+        font-size: 2.5vh;
+        margin-bottom: 3vh;
+    }
+
+    .pessoas {
+        margin-top: 3vh;
+    }
+
+    .submit {
+        background-color: var(--color-header-bg);
+        color: var(--color-white);
+        height: 4vh;
+        width: 10vh;
+        font-size: 2vh;
+    }
+
+    .vitor {
+        margin-left: 32vh;
+    }
+
+    .bruno {
+        margin-right: 0vh;
+    }
+
+    .Saudacoes {
+        font-size: 3.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .address-img {
+        height: 40vh;
+    }
+
+    .logo-img, .logo {
+        height: 40vh;
+        width: 40vh;
+    }
+
+    .integrantes {
+        margin-top: 4vh;
+        font-size: 3.5vh;
+    }
+
+    .names {
+        font-size: 2vh;
+    }
+
+    .forms-class {
+        margin-top: 4vh;
+        font-size: 1.8vh;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2vh;
+    }
+
+    .nome-input, .email-input {
+        width: 80%;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .mensagem-texarea {
+        width: 39.5vh;
+        height: 10vh;
+        font-size: 2vh;
+    }
+
+    .endereço-text {
+        font-size: 3vh;
+        margin-left: 22vh;
+    }
+
+    .site-footer {
+        padding: 2vh 0;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-top: 0.25vh solid var(--color-black);
+        background-color: var(--color-footer-bg);
+        margin-top: -2vh;
+    }
+
+    .author-Vitor,
+    .author-Bruno,
+    .copy-info, 
+    .email-Vitor,
+    .email-Bruno {
+        margin-top: 1vh;
+        font-size: 1.5vh;
+        color: var(--color-footer-text);
+    }
+
+    .author-Bruno,
+    .email-Bruno {
+        margin-left: -30vh;
+    }
+}
+
+@media (max-width: 500px) {
+    :root {
+        --background-body: #ECDFCC;
+        --color-black: black;
+        --color-white: white;
+        --color-header-bg: #AAB396;
+        --color-header-text: #3d281e;
+        --color-hover: #7e6457;
+        --color-main-title: #ffffff;
+        --color-coffee-border: #3d281e;
+        --color-footer-bg: #AAB396;
+        --color-footer-text: #674636;
+        --color-name: #3d281e;
+        --color-white-bg: #ECDFCC;
+    }
+
+    .nav-title {
+        font-size: 2.5vh;
+        margin-left: -8vh;
+        margin-top: 2vh;
+    }
+
+    .nav-image {
+        margin-left: -10vh;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 20vh;
+        background-color: #AAB396;
+    }
+
+    .endereço-text {
+        margin-left: 5vh;
+        font-size: 2vh;
+    }
+
+    .nav-item a {
+        font-size: 2.5vh;
+        margin: 2vh 0;
+    }
+
+    h1 {
+        color: var(--color-coffee-border);
+        font-size: 5vh;
+    }
+
+    h2 {
+        font-size: 2.5vh;
+        margin-bottom: 3vh;
+    }
+
+    .pessoas {
+        margin-top: 3vh;
+    }
+
+    .submit {
+        background-color: var(--color-header-bg);
+        color: var(--color-white);
+        height: 4vh;
+        width: 10vh;
+        font-size: 2vh;
+    }
+
+    .vitor {
+        margin-left: 61vh;
+    }
+
+    .bruno {
+        margin-right: 6vh;
+    }
+
+    .Saudacoes {
+        font-size: 3.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .address-img {
+        height: 40vh;
+    }
+
+    .logo-img, .logo {
+        height: 25vh;
+        width: 25vh;
+    }
+
+    .integrantes {
+        margin-top: 4vh;
+        font-size: 3.5vh;
+    }
+
+    .names {
+        font-size: 2vh;
+    }
+
+    .forms-class {
+        margin-top: 4vh;
+        font-size: 1.8vh;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 2vh;
+    }
+
+    .nome-input, .email-input {
+        width: 80%;
+        height: 5vh;
+        font-size: 2vh;
+    }
+
+    .mensagem-texarea {
+        width: 39.5vh;
+        height: 10vh;
+        font-size: 2vh;
+    }
+
+    .site-footer {
+        padding: 2vh 0;
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-top: 0.25vh solid var(--color-black);
+        background-color: var(--color-footer-bg);
+        margin-top: -2vh;
+    }
+
+    .author-Vitor,
+    .author-Bruno,
+    .copy-info, 
+    .email-Vitor,
+    .email-Bruno {
+        margin-top: 1vh;
+        font-size: 1.5vh;
+        color: var(--color-footer-text);
+    }
+
+    .author-Bruno,
+    .email-Bruno {
+        margin-left: -30vh;
+    }
 }
