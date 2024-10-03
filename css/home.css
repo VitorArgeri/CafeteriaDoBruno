@@ -59,6 +59,7 @@ a {
     margin-left: -7.5vh;
     margin-bottom: 2.5vh;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 2vh;
 }
 
 .main-nav {
@@ -202,7 +203,7 @@ a:hover {
     .main-nav {
         flex-direction: column;
         align-items: center;
-        margin: 1vh 20vh;
+        margin: 1vh 15vh;
         background-color: #AAB396;
     }
 
@@ -239,7 +240,6 @@ a:hover {
     }
 
     .site-footer {
-        padding: 2vh 0;
         text-align: center;
         font-size: 2vh;
         margin-top: 3vh;
@@ -254,13 +254,13 @@ a:hover {
     .email-Vitor,
     .email-Bruno {
         margin-top: 1vh;
-        font-size: 1.5vh;
+        font-size: 1.3vh;
         color: var(--color-footer-text);
     }
 
     .author-Bruno,
     .email-Bruno {
-        margin-left: -30vh;
+        margin-left: -20vh;
     }
 }
 
@@ -293,7 +293,7 @@ a:hover {
     .main-nav {
         flex-direction: column;
         align-items: center;
-        margin: 1vh 20vh;
+        margin: 1vh 40vh;
         background-color: #AAB396;
     }
 

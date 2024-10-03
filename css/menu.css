@@ -1,3 +1,18 @@
+:root {
+    --background-body: #ECDFCC;
+    --color-black: black;
+    --color-white: white;
+    --color-header-bg: #AAB396;
+    --color-header-text: #3d281e;
+    --color-hover: #7e6457;
+    --color-main-title: #ffffff;
+    --color-coffee-border: #3d281e;
+    --color-footer-bg: #AAB396;
+    --color-footer-text: #674636;
+    --color-name: #3d281e;
+    --color-white-bg: #ECDFCC;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,27 +20,27 @@
 }
 
 body {
-    background-color: #ECDFCC;
+    background-color: var(--background-body);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;                       
-    color: black;
+    color: var(--color-black);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-black);
 }
 
 .site-header {
-    background-color: #AAB396;
-    color: #3d281e;
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
     padding: 1.25vh;
     height: 18.75vh;
     width: 100%;
     flex-shrink: 0;
     display: flex;
     align-items: center;
-    border-bottom: 3px solid black;
+    border-bottom: 0.375vh solid var(--color-black);
 }
 
 .nav-image {
@@ -42,11 +57,13 @@ a {
 .nav-title {
     font-size: 3.125vh;
     margin-left: -7.5vh;
+    margin-bottom: 2.5vh;
     font-family: 'Times New Roman', Times, serif;
+    margin-top: 2vh;
 }
 
 .main-nav {
-    margin-left: 40vh;
+    margin-left: 32vh;
     align-items: center;
     display: flex;
     padding: 1.875vh;
@@ -60,413 +77,972 @@ a {
 }
 
 a:hover {
-    color: #7e6457;
-    text-decoration: underline;
+color: #7e6457;
+text-decoration: underline;
 }
 
 ol {
-    display: flex;
+display: flex;
 }
 
 .main-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #3d281e;
-    font-weight: bold;
-    margin-top: 2.5vh;
-    font-size: 6.25vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #3d281e;
+font-weight: bold;
+margin-top: 2.5vh;
+font-size: 6.25vh;
 }
 
 .introduction-text {
-    font-size: 3.125vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #7e6457;
-    font-weight: bold;
+font-size: 3.125vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #7e6457;
+font-weight: bold;
 }
 
 .section-title {
-    margin-left: 22.5vh;
-    margin-top: 8.75vh;
-    font-size: 4.375vh;
-    color: #3d281e;
-    font-weight: bold;
+margin-left: 22.5vh;
+margin-top: 8.75vh;
+font-size: 4.375vh;
+color: #3d281e;
+font-weight: bold;
 }
 
 .section-title-brownie {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 8.75vh;
-    font-size: 4.375vh;
-    color: #3d281e;
-    font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 8.75vh;
+font-size: 4.375vh;
+color: #3d281e;
+font-weight: bold;
 }
 
 .menu-sections {
-    justify-content: center;
-    display: flex;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-    margin-top: 3.75vh;
-    padding: 6.25vh;
-    margin-left: 12vh;
-    margin-right: 12vh;
+justify-content: center;
+display: flex;
+box-shadow: 5px 5px 20px black;
+overflow: hidden;
+margin-top: 3.75vh;
+padding: 6.25vh;
+margin-left: 12vh;
+margin-right: 12vh;
 }
 
 .menu-sections img {
-    height: 62.5vh;
-    width: 50vh;
-    border-radius: 3px;
-    transition: .7s;
-    margin-left: 5vh;
+height: 62.5vh;
+width: 50vh;
+border-radius: 3px;
+transition: .7s;
+margin-left: 5vh;
 }
 
 .menu-sections img:hover {
-    filter: brightness(70%);
-    transition: 0.3s;
+filter: brightness(70%);
+transition: 0.3s;
 }
 
 .menu-sections-brownie {
-    justify-content: center;
-    display: flex;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-    margin-top: 3.75vh;
-    padding: 6.25vh;
-    margin-left: 60vh;
-    margin-right: 60vh;
+justify-content: center;
+display: flex;
+box-shadow: 5px 5px 20px black;
+overflow: hidden;
+margin-top: 3.75vh;
+padding: 6.25vh;
+margin-left: 60vh;
+margin-right: 60vh;
 }
 
 .menu-sections-brownie img {
-    height: 62.5vh;
-    width: 50vh;
-    border-radius: 3px;
-    transition: .7s;
-    margin-left: 5vh;
+height: 62.5vh;
+width: 50vh;
+border-radius: 3px;
+transition: .7s;
+margin-left: 5vh;
 }
 
 .menu-sections-brownie img:hover {
-    filter: brightness(70%);
-    transition: 0.3s;
+filter: brightness(70%);
+transition: 0.3s;
 }
 
 .intro {
-    height: 8.75vh;
-    width: 50vh;
-    padding: 0.75vh;
-    box-sizing: border-box;
-    position: absolute;
-    background-color: rgba(27, 27, 27, 0.5);
-    color: white;
-    transition: .3s;
-    overflow: hidden;
-    margin-top: -9.625vh;
-    margin-left: 4.875vh;
+height: 8.75vh;
+width: 50vh;
+padding: 0.75vh;
+box-sizing: border-box;
+position: absolute;
+background-color: rgba(27, 27, 27, 0.5);
+color: white;
+transition: .3s;
+overflow: hidden;
+margin-top: -9.625vh;
+margin-left: 4.875vh;
 }
 
 .intro h1 {
-    text-align: center;
-    font-size: 5vh;
+text-align: center;
+font-size: 5vh;
 }
 
 .descricao {
-    font-size: 2.5vh;
-    opacity: 0;
+font-size: 2.5vh;
+opacity: 0;
 }
 
 .price {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    font-size: 3.75vh;
-    font-weight: bold;
-    color: white;
+justify-content: center;
+display: flex;
+align-items: center;
+font-size: 3.75vh;
+font-weight: bold;
+color: white;
 }
 
 .nome {
-    font-weight: bold;
+font-weight: bold;
 }
 
-.card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+.first-card {
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
-.card:hover {
-    cursor: pointer;
+.first-card:hover {
+cursor: pointer;
 }
 
-.card:hover .intro {
-    height: 28.75vh;
-    bottom: -24.3vh;
-    background-color: rgba(61, 40, 30, 0.5);
+.first-card:hover .intro {
+height: 28.75vh;
+bottom: -24.3vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
-.card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+.first-card:hover .descricao {
+opacity: 1;
+visibility: visible;
 }
 
 .second-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .second-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .second-card:hover .intro {
-    height: 28.75vh;
-    bottom: -24.3vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -24.3vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .second-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .third-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .third-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .third-card:hover .intro {
-    height: 28.75vh;
-    background-color: rgba(61, 40, 30, 0.5);
-    bottom: -24.3vh;
+height: 28.75vh;
+background-color: rgba(61, 40, 30, 0.5);
+bottom: -24.3vh;
 }
 
 .third-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .fourth-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .fourth-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .fourth-card:hover .intro {
-    height: 28.75vh;
-    bottom: -119vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -119vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .fourth-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .fiveth-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .fiveth-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .fiveth-card:hover .intro {
-    height: 28.75vh;
-    bottom: -119vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -119vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .fiveth-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .sixth-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .sixth-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .sixth-card:hover .intro {
-    height: 28.75vh;
-    bottom: -119vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -119vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .sixth-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .seventh-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .seventh-card:hover {
-    cursor: pointer;
+cursor: pointer;    
 }
 
 .seventh-card:hover .intro {
-    height: 28.75vh;
-    bottom: -213.5vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -213.5vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .seventh-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .eighty-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .eighty-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .eighty-card:hover .intro {
-    height: 28.75vh;
-    bottom: -213.5vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -213.5vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .eighty-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .ninth-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .ninth-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .ninth-card:hover .intro {
-    height: 28.75vh;
-    bottom: -213.5vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -213.5vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .ninth-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .tenth-card {
-    height: 62.5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3.75vh;
+height: 62.5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 3.75vh;
 }
 
 .tenth-card:hover {
-    cursor: pointer;
+cursor: pointer;
 }
 
 .tenth-card:hover .intro {
-    height: 28.75vh;
-    bottom: -307.5vh;
-    background-color: rgba(61, 40, 30, 0.5);
+height: 28.75vh;
+bottom: -307.5vh;
+background-color: rgba(61, 40, 30, 0.5);
 }
 
 .tenth-card:hover .descricao {
-    opacity: 1;
-    visibility: visible;
+opacity: 1;
+visibility: visible;
 }
 
 .site-footer {
-    margin-top: 6.25vh;
-    height: 18.75vh;
-    background-color: #AAB396;
-    color: #674636;
-    font-weight: bold;
-    border-top: 3px solid black;
+margin-top: 6.25vh;
+height: 18.75vh;
+background-color: #AAB396;
+color: #674636;
+font-weight: bold;
+border-top: 3px solid black;
 }
 
 .authors {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2.5vh;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 2.5vh;
 }
 
 .contact-info-vitor {
-    margin-right: 37.5vh;
+margin-right: 37.5vh;
 }
 
 .author-name {
-    margin-top: 1.25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #674636;
-    font-weight: bold;
+margin-top: 1.25vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #674636;
+font-weight: bold;
 }
 
 .copy-info {
-    color: #3d281e;
-    font-weight: bold;
-    margin-top: 1.25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+color: #3d281e;
+font-weight: bold;
+margin-top: 1.25vh;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .author-email {
-    margin-top: 1.25vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #674636;
-    font-weight: bold;
+margin-top: 1.25vh;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #674636;
+font-weight: bold;
 }
 
 .name {
-    color: #3d281e;
+color: #3d281e;
+}
+
+@media (max-width: 500px) {
+    :root {
+        --background-body: #ECDFCC;
+        --color-black: black;
+        --color-white: white;
+        --color-header-bg: #AAB396;
+        --color-header-text: #3d281e;
+        --color-hover: #7e6457;
+        --color-main-title: #ffffff;
+        --color-coffee-border: #3d281e;
+        --color-footer-bg: #AAB396;
+        --color-footer-text: #674636;
+        --color-name: #3d281e;
+        --color-white-bg: #ECDFCC;
+    }
+
+    .nav-title {
+        font-size: 2.5vh;
+        margin-left: -8vh;
+        margin-top: 2vh;
+    }
+
+    .nav-image {
+        margin-left: -10vh;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 15vh;
+        background-color: #AAB396;
+    }
+
+    .nav-item a {
+        font-size: 2.5vh;
+        margin: 2vh 0;
+    }
+
+    .site-footer {
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-top: 0.25vh solid var(--color-black);
+        background-color: var(--color-footer-bg);
+        margin-top: -2vh;
+    }
+
+    .author-Vitor,
+    .author-Bruno,
+    .copy-info, 
+    .email-Vitor,
+    .email-Bruno {
+        margin-top: 1vh;
+        font-size: 1.3vh;
+        color: var(--color-footer-text);
+    }
+
+    .main-title {
+        font-size: 6vh;
+    }
+
+    .introduction-text {
+        font-size: 2vh;
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2vh;
+    }
+
+    .menu-sections {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: column;
+        width: 60%;
+        height: 80vh;
+    }
+
+    .menu-sections h1 {
+        font-size: 2vh;
+    }
+
+    .card {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .card:hover {
+        cursor: pointer;
+        }
+        
+        .card:hover .intro {
+        height: 12vh;
+        background-color: rgba(61, 40, 30, 0.5);    
+        }
+
+        .first-card:hover .intro {
+            margin-bottom: 41.8vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .second-card:hover .intro {
+            margin-bottom: 20.8vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .third-card:hover .intro {
+            margin-bottom: 0vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+
+        .fourth-card:hover .intro {
+            margin-bottom: 36.9vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .fiveth-card:hover .intro {
+            margin-bottom: 16vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .sixth-card:hover .intro {
+            margin-bottom: -5.1vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+
+        .seventh-card:hover .intro {
+            margin-bottom: 31.8vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .eighty-card:hover .intro {
+            margin-bottom: 11.1vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .ninth-card:hover .intro {
+            margin-bottom: -10.2vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .card:hover .descricao {
+        opacity: 1;
+        visibility: visible;
+        }
+
+        .intro {
+            height: 4vh;
+            width: 20vh;
+            padding: 0.75vh;
+            box-sizing: border-box;
+            position: absolute;
+            background-color: rgba(27, 27, 27, 0.5);
+            color: white;
+            transition: .3s;
+            overflow: hidden;
+            margin-top: -9.625vh;
+            margin-left: 4.875vh;
+            }
+    
+        .descricao {
+            font-size: 1vh;
+        }
+
+        .price {
+            font-size: 2vh;
+        }
+
+        .menu-sections-brownie {
+            height: 40vh;
+            width: 60%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+            margin-top: 3.75vh;
+            padding: 6.25vh;
+            position: relative;
+            right: 49vh;
+            margin-bottom: 8vh;
+            }
+            
+            .menu-sections-brownie img {
+            height: 30vh;
+            width: 30vh;
+            border-radius: 3px;
+            transition: .7s;
+            }
+            
+            .menu-sections-brownie img:hover {
+                filter: brightness(70%);
+                transition: 0.3s;
+                }
+
+        .menu-sections-brownie ol {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tenth-card {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -1vh;
+            }
+            
+            .tenth-card .intro {
+                width: 30vh;
+                height: 8vh;
+            }
+
+            .tenth-card:hover {
+            cursor: pointer;
+            }
+            
+            .tenth-card:hover .intro {
+                bottom: 5vh;
+                position: absolute;
+                height: 30vh;
+                background-color: rgba(61, 40, 30, 0.5);    
+                height: 20vh;
+                }
+
+            .tenth-card h1{
+                font-size: 4vh;
+            }
+
+            .tenth-card h1{
+                font-size: 4vh;
+            }
+
+            .tenth-card .descricao {
+                font-size: 1.5vh;
+            }
+    
+            .tenth-card .price {
+                font-size: 2.5vh;
+            }
+        
+    ol {
+        flex-direction: column;
+        display: flex;
+        gap: 1vh;
+    }
+
+    .menu-sections img {
+        height: 20vh; 
+        width: 20vh; 
+        border-radius: 3px;
+        transition: 0.7s;
+    }
+    
+    .menu-sections img:hover {
+        filter: brightness(70%);
+        transition: 0.3s;
+    }
+    
+
+    .author-Bruno,
+    .email-Bruno {
+        margin-left: -20vh;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    :root {
+        --background-body: #ECDFCC;
+        --color-black: black;
+        --color-white: white;
+        --color-header-bg: #AAB396;
+        --color-header-text: #3d281e;
+        --color-hover: #7e6457;
+        --color-main-title: #ffffff;
+        --color-coffee-border: #3d281e;
+        --color-footer-bg: #AAB396;
+        --color-footer-text: #674636;
+        --color-name: #3d281e;
+        --color-white-bg: #ECDFCC;
+    }
+
+    .nav-title {
+        font-size: 2.5vh;
+        margin-left: -8vh;
+        margin-top: 2vh;
+    }
+
+    .nav-image {
+        margin-left: -10vh;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        margin: 1vh 40vh;
+        background-color: #AAB396;
+    }
+
+    .nav-item a {
+        font-size: 2.5vh;
+        margin: 2vh 0;
+    }
+
+    .site-footer {
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-top: 0.25vh solid var(--color-black);
+        background-color: var(--color-footer-bg);
+        margin-top: -2vh;
+    }
+
+    .author-Vitor,
+    .author-Bruno,
+    .copy-info, 
+    .email-Vitor,
+    .email-Bruno {
+        margin-top: 1vh;
+        font-size: 1.3vh;
+        color: var(--color-footer-text);
+    }
+
+    .main-title {
+        font-size: 6vh;
+    }
+
+    .introduction-text {
+        font-size: 2vh;
+    }
+
+    .section-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -2vh;
+    }
+
+    .menu-sections {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: column;
+        width: 60%;
+        height: 80vh;
+        margin-left: 17vh;
+    }
+
+    .menu-sections h1 {
+        font-size: 2vh;
+    }
+
+    .card {
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        
+        .card:hover {
+        cursor: pointer;
+        }
+        
+        .card:hover .intro {
+        height: 12vh;
+        background-color: rgba(61, 40, 30, 0.5);    
+        }
+
+        .first-card:hover .intro {
+            margin-bottom: 41.7vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .second-card:hover .intro {
+            margin-bottom: 20.7vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .third-card:hover .intro {
+            margin-bottom: 0vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+
+        .fourth-card:hover .intro {
+            margin-bottom: 36.9vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .fiveth-card:hover .intro {
+            margin-bottom: 16vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .sixth-card:hover .intro {
+            margin-bottom: -4.9vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+
+        .seventh-card:hover .intro {
+            margin-bottom: 32vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .eighty-card:hover .intro {
+            margin-bottom: 11vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .ninth-card:hover .intro {
+            margin-bottom: -10vh;
+            height: 12vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            }
+        
+        .card:hover .descricao {
+        opacity: 1;
+        visibility: visible;
+        }
+
+        .intro {
+            height: 4vh;
+            width: 20vh;
+            padding: 0.75vh;
+            box-sizing: border-box;
+            position: absolute;
+            background-color: rgba(27, 27, 27, 0.5);
+            color: white;
+            transition: .3s;
+            overflow: hidden;
+            margin-top: -9.625vh;
+            margin-left: 4.875vh;
+            }
+    
+        .descricao {
+            font-size: 1vh;
+        }
+
+        .price {
+            font-size: 2vh;
+        }
+
+        .menu-sections-brownie {
+            height: 40vh;
+            width: 60%;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            box-shadow: 5px 5px 20px black;
+            overflow: hidden;
+            margin-top: 3.75vh;
+            padding: 6.25vh;
+            position: relative;
+            right: 43vh;
+            margin-bottom: 8vh;
+            }
+            
+            .menu-sections-brownie img {
+            height: 30vh;
+            width: 30vh;
+            border-radius: 3px;
+            transition: .7s;
+            }
+            
+            .menu-sections-brownie img:hover {
+                filter: brightness(70%);
+                transition: 0.3s;
+                }
+
+        .menu-sections-brownie ol {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tenth-card {
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -1vh;
+            }
+            
+            .tenth-card .intro {
+                width: 30vh;
+                height: 8vh;
+            }
+
+            .tenth-card:hover {
+            cursor: pointer;
+            }
+            
+            .tenth-card:hover .intro {
+            bottom: 5vh;
+            position: absolute;
+            height: 30vh;
+            background-color: rgba(61, 40, 30, 0.5);    
+            height: 20vh;
+            }
+
+            .tenth-card h1{
+                font-size: 4vh;
+            }
+
+            .tenth-card .descricao {
+                font-size: 1.5vh;
+            }
+    
+            .tenth-card .price {
+                font-size: 2.5vh;
+            }
+        
+    ol {
+        flex-direction: column;
+        display: flex;
+        gap: 1vh;
+    }
+
+    .menu-sections img {
+        height: 20vh; 
+        width: 20vh; 
+        border-radius: 3px;
+        transition: 0.7s;
+    }
+    
+    .menu-sections img:hover {
+        filter: brightness(70%);
+        transition: 0.3s;
+    }
+    
+
+    .author-Bruno,
+    .email-Bruno {
+        margin-left: -20vh;
+    }
 }
