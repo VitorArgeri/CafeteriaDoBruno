@@ -798,32 +798,13 @@ color: #3d281e;
     .main-nav {
         flex-direction: column;
         align-items: center;
-        margin: 1vh 40vh;
+        margin: 1vh 31.25vh;
         background-color: #AAB396;
     }
 
     .nav-item a {
         font-size: 2.5vh;
         margin: 2vh 0;
-    }
-
-    .site-footer {
-        text-align: center;
-        font-size: 2vh;
-        margin-top: 3vh;
-        border-top: 0.25vh solid var(--color-black);
-        background-color: var(--color-footer-bg);
-        margin-top: -2vh;
-    }
-
-    .author-Vitor,
-    .author-Bruno,
-    .copy-info, 
-    .email-Vitor,
-    .email-Bruno {
-        margin-top: 1vh;
-        font-size: 1.3vh;
-        color: var(--color-footer-text);
     }
 
     .main-title {
@@ -1041,8 +1022,28 @@ color: #3d281e;
     }
     
 
+    .site-footer {
+        text-align: center;
+        font-size: 2vh;
+        margin-top: 3vh;
+        border-top: 0.25vh solid var(--color-black);
+        background-color: var(--color-footer-bg);
+        margin-top: 2vh;
+        width: 768px;
+    }
+
+    .author-Vitor,
+    .author-Bruno,
+    .copy-info, 
+    .email-Vitor,
+    .email-Bruno {
+        margin-top: 1vh;
+        font-size: 1.5vh;
+        color: var(--color-footer-text);
+    }
+
     .author-Bruno,
     .email-Bruno {
-        margin-left: -20vh;
+        margin-left: -30vh;
     }
 }

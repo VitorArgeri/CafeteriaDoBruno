@@ -252,7 +252,7 @@ h2 {
 
 .bruno {
     margin-top: 2.5vh;
-    margin-left: 40vh;
+    margin-left: 47vh;
 }
 
 .site-footer {
@@ -303,6 +303,10 @@ h2 {
         --color-white-bg: #ECDFCC;
     }
 
+    .site-header {
+        width: 100%;
+    }
+
     .nav-title {
         font-size: 2.5vh;
         margin-left: -8vh;
@@ -316,7 +320,7 @@ h2 {
     .main-nav {
         flex-direction: column;
         align-items: center;
-        margin: 1vh 40vh;
+        margin: 1vh 20rem;
         background-color: #AAB396;
     }
 
@@ -345,14 +349,18 @@ h2 {
         height: 4vh;
         width: 10vh;
         font-size: 2vh;
+        position: relative;
+        left: 40rem;
     }
 
     .vitor {
-        margin-left: 32vh;
+        margin-left: 30rem;
+        font-size: 1rem;
     }
 
     .bruno {
-        margin-right: 0vh;
+        margin-right: 4rem;
+        font-size: 1rem;
     }
 
     .Saudacoes {
@@ -365,8 +373,8 @@ h2 {
     }
 
     .logo-img, .logo {
-        height: 40vh;
-        width: 40vh;
+        height: 20rem;
+        width: 20rem;
     }
 
     .integrantes {
@@ -393,24 +401,24 @@ h2 {
     }
 
     .mensagem-texarea {
-        width: 39.5vh;
+        width: 30.5rem;
         height: 10vh;
         font-size: 2vh;
     }
 
     .endereço-text {
-        font-size: 3vh;
-        margin-left: 22vh;
+        font-size: 1.25rem;
+        margin-left: 7rem;
     }
 
     .site-footer {
-        padding: 2vh 0;
         text-align: center;
         font-size: 2vh;
         margin-top: 3vh;
         border-top: 0.25vh solid var(--color-black);
         background-color: var(--color-footer-bg);
-        margin-top: -2vh;
+        margin-top: 2vh;
+        width: 768px;
     }
 
     .author-Vitor,
@@ -462,11 +470,6 @@ h2 {
         background-color: #AAB396;
     }
 
-    .endereço-text {
-        margin-left: 5vh;
-        font-size: 2vh;
-    }
-
     .nav-item a {
         font-size: 2.5vh;
         margin: 2vh 0;
@@ -490,8 +493,10 @@ h2 {
         background-color: var(--color-header-bg);
         color: var(--color-white);
         height: 4vh;
-        width: 10vh;
+        width: 3rem;
         font-size: 2vh;
+        position: relative;
+        left: 20rem;
     }
 
     .vitor {
@@ -502,9 +507,18 @@ h2 {
         margin-right: 6vh;
     }
 
+    .name, .instagram, .email, .telefone {
+        font-size: 0.6rem;
+    }
+
     .Saudacoes {
-        font-size: 3.5vh;
+        font-size: 2rem;
         margin-bottom: 1vh;
+    }
+
+    .endereço-text {
+        font-size: 0.75rem;
+        margin-left: 1rem;
     }
 
     .address-img {
@@ -512,8 +526,8 @@ h2 {
     }
 
     .logo-img, .logo {
-        height: 25vh;
-        width: 25vh;
+        height: 10rem;
+        width: 10rem;
     }
 
     .integrantes {
@@ -540,7 +554,7 @@ h2 {
     }
 
     .mensagem-texarea {
-        width: 39.5vh;
+        width: 13.5rem;
         height: 10vh;
         font-size: 2vh;
     }
