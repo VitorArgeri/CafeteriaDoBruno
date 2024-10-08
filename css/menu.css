@@ -438,54 +438,36 @@ visibility: visible;
 }
 
 .site-footer {
-margin-top: 6.25vh;
-height: 18.75vh;
-background-color: #AAB396;
-color: #674636;
-font-weight: bold;
-border-top: 3px solid black;
+    height: 18.75vh;
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    font-weight: bold;
+    border-top: 0.375vh solid var(--color-black);
+    margin-top: 3rem;
 }
 
 .authors {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-bottom: 2.5vh;
+    margin: 1.25vh 0 2.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info-vitor {
-margin-right: 37.5vh;
+    margin-right: 37.5vh;
 }
 
-.author-name {
-margin-top: 1.25vh;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #674636;
-font-weight: bold;
-}
-
-.copy-info {
-color: #3d281e;
-font-weight: bold;
-margin-top: 1.25vh;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
+.author-name, 
+.copy-info, 
 .author-email {
-margin-top: 1.25vh;
-display: flex;
-align-items: center;
-justify-content: center;
-color: #674636;
-font-weight: bold;
+    margin-top: 1.25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .name {
-color: #3d281e;
+    color: var(--color-black);
 }
 
 @media (max-width: 500px) {
@@ -1023,12 +1005,12 @@ color: #3d281e;
     
 
     .site-footer {
+        height: 18.75vh;
         text-align: center;
         font-size: 2vh;
-        margin-top: 3vh;
         border-top: 0.25vh solid var(--color-black);
         background-color: var(--color-footer-bg);
-        margin-top: 2vh;
+        margin-top: -2vh;
         width: 768px;
     }
 
