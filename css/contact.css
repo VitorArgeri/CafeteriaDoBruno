@@ -287,6 +287,7 @@ h2 {
     color: var(--color-black);
 }
 
+/* Ipad MINI */
 @media (min-width: 501px) and (max-width: 768px) {
     :root {
         --background-body: #ECDFCC;
@@ -437,6 +438,7 @@ h2 {
     }
 }
 
+/* Iphone SE */
 @media (max-width: 500px) {
     :root {
         --background-body: #ECDFCC;

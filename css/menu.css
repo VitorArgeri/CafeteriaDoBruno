@@ -470,6 +470,7 @@ visibility: visible;
     color: var(--color-black);
 }
 
+/* Iphone SE */
 @media (max-width: 500px) {
     :root {
         --background-body: #ECDFCC;
@@ -751,6 +752,7 @@ visibility: visible;
     }
 }
 
+/* Ipad MINI */
 @media (min-width: 501px) and (max-width: 768px) {
     :root {
         --background-body: #ECDFCC;
